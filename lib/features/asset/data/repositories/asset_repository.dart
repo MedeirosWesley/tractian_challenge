@@ -9,6 +9,10 @@ class AssetRepository implements IAssetRepository {
       : _remoteDataSource = remoteDataSource;
   @override
   Future<List<Node>> getAssetsByCompanyId(String companyId) {
-    return _remoteDataSource.getAssetsByCompanyId(companyId);
+    try {
+      return _remoteDataSource.getAssetsByCompanyId(companyId);
+    } catch (e) {
+      rethrow;
+    }
   }
 }

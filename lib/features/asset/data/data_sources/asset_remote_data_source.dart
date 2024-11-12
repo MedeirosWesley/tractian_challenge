@@ -17,7 +17,7 @@ class AssetRemoteDataSource implements IAssetRemoteDataSource {
       final response =
           await _service.get(ApiEndpoints.assetsByCompanyId(companyId));
       return AssetAdapter.fromJsonList(response.data);
-    } catch (_) {
+    } catch (e) {
       rethrow;
     }
   }
