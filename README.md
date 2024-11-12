@@ -29,4 +29,5 @@ Siga os passos abaixo para configurar e executar o projeto:
 
 ### Video:
 
-  
+https://github.com/user-attachments/assets/1e13810d-f589-4c05-82af-6491807fecbc
+
