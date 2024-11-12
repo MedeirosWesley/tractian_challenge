@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter Demo',
+      title: 'Tractian Challenge',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.robotoTextTheme(
@@ -20,9 +20,7 @@ class App extends StatelessWidget {
             seedColor: const Color(0xFF17192D)),
         useMaterial3: true,
       ),
-      routerDelegate: Routers.routes.routerDelegate,
-      routeInformationParser: Routers.routes.routeInformationParser,
-      routeInformationProvider: Routers.routes.routeInformationProvider,
+      routerConfig: Routers.routes,
     );
   }
 }
